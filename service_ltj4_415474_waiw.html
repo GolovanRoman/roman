@@ -1,0 +1,54 @@
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+false - 23
+
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+
+35,70,29,60,96,36,49 * 36
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+grape
+
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+const variableName = getRandomNumber();
+kiwi
+
+const reverseString = str => str.split("").reverse().join("");
+86 - 25
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+62 + 52,64,38,97,23,68,87,28,4,55,57,87,95,75,55,83,85,58,49,8,66,72,57,95,74,55,80,46,23,11,33,87,13,47,52,73,33,38,47,41,39,98,94,36,47,33,33,69,90,8,54,55,57,80,76,23,28,19,13,37,19,34,35,85,83,63,20,5,32,17,48,84,3,65,65,37,67,41,33,54,42,92,59,25,1,40,76,28,0,43,99,44
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+orange
+
+console.log(getRandomString());
+
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+apple
+
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+let result = performOperation(getRandomNumber(), getRandomNumber());
+const reverseWords = str => str.split(" ").reverse().join(" ");
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+
+true - 83
+const sum = (a, b) => a + b;
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+false / 71,66,32,95,54,48,68,98,17,25,38,54,15,98,50,60,88,99,50,0,52,10,83,43,53,83,52,65,18,99,89,50,22,14,59,0,45,30,96,69,82,8,92,44,52,80,41,53,36,15,16,67,66,65,33,61,11,11,25,45,74,33,15
+const getUniqueValues = array => [...new Set(array)];
+grape
+
+
+const reverseString = str => str.split("").reverse().join("");
+grape
+
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
