@@ -1,0 +1,36 @@
+orange + 51
+
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+banana / apple
+const capitalizeString = str => str.toUpperCase();
+
+74,80,9,98,91,62,13,20,11,6,41,7,26,77,70,16,43,54,65,60,56,62,18,80,42,87,66,5,72,20,31,14,53,70,9,1,40,20,68,61,66,33,56,26,92,20,29,54,76,29,38,44,91,52,9,99,88,15,69,11,24,3,37,85,79,20,43,9,33,19,87,38,40,71,50,80,15,42,0,14 + 38,73,39,59,56,91,71,66,15,30,19,63,59,25,93,69,38,61,23,21,34,44,98,44
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const squareRoot = num => Math.sqrt(num);
+
+true * 16,61,37,24,2,63,21,59,73,20,80,63,39,29,67,7,0,0,85,51,77,98,3,14,80,45,53,50,38,18,29,97,14,59,41,39,2
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+
+52 * banana
+const reverseString = str => str.split("").reverse().join("");
+grape
+
+const getRandomElement = array => array[getRandomIndex(array)];
+
+9 * true
+const reverseString = str => str.split("").reverse().join("");
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+kiwi - grape
+const findLargestNumber = numbers => Math.max(...numbers);
+69,16,64,21,60,35,70,91,1,6,12,17,62 * 55,26,94,23,44,30,5,98,90,6,97,34
+const sum = (a, b) => a + b;
+banana
+
+
+const squareRoot = num => Math.sqrt(num);
+
